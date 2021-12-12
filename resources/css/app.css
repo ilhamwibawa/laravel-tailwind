@@ -1,0 +1,61 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+.dataTables_length label,
+.dataTables_filter label,
+.dataTables_info,
+.dataTables_paginate {
+    @apply text-sm;
+}
+
+.dataTables_length select,
+.dataTables_filter input {
+    @apply py-2 px-1 rounded shadow-sm;
+}
+
+.dataTable {
+    @apply pt-5;
+}
+
+.dataTable thead {
+    @apply bg-gray-700 text-white text-sm;
+}
+
+.dataTable tbody {
+    @apply text-sm text-gray-700;
+}
+
+.dataTable tbody tr.odd {
+    @apply bg-gray-100;
+}
+
+.dataTables_wrapper .dataTables_processing {
+    @apply top-[122px];
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    @apply bg-none bg-gray-700 text-white rounded border-0 shadow-sm !important;
+}
+
+/* Dropzone override */
+
+.dropzone {
+    @apply border border-gray-400;
+}
+
+.dropzone .dz-preview .dz-image {
+    @apply rounded;
+}
+
+/* Selectize Override */
+
+.selectize-input {
+    @apply shadow-none appearance-none relative block w-full px-3 py-2 border rounded border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm focus:z-10;
+}
+
+.selectize-dropdown [data-selectable].option {
+    @apply p-3;
+}
